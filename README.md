@@ -4,8 +4,7 @@ This is a light client(sample) for Android Zeniius project. The completed client
 Zeniius is a dynamic & active social network platform for CEOs. We currently run it in the forms of mobile application and website, with the beta version currently available on App Store & Google Play. Zeniius will be the first application integrated with BitCEO as its transactional token.
 
 <p align="center">
-  <img src="https://lh4.googleusercontent.com/ypoLmBfkEzxhuTrH3abtCi47Xbw8UT26fAV75KU6qU0CiT61LRGpBKvHvDc27F5Z2pJdh_pr6uacGkpl_wMN=w2816-h1338-rw" width="150" title="hover text">
-  <img src="https://lh5.googleusercontent.com/5e7QPRELQvuq_xQHiWyRDddsy2EQ1lcC-w2vZRV-1Z-7oVF_UDAPB0w3p66Ad09LPzgBONhoYpih5sGYpBrQ=w2816-h1338-rw" width="150" alt="accessibility text">
+   <img src="https://lh5.googleusercontent.com/2yEUklbOioxBjUvO_2XejWmTu8fXRFC2kk-NSq_8FnL6UFeOUTxvoh7r3HW3ycVXHS6g75FekxvVyD1RJm7u=w2816-h1338-rw" width="150" alt="accessibility text">
   
   <img src="https://lh5.googleusercontent.com/WGaEXGLOYRzpZXucoifHuz0gItzSsDQd_JtdTDDRM8W-nIkHp685KHFjZYzC4S1CABOtCCcFelCz5Gb08gu_=w2816-h1338-rw" width="150" alt="accessibility text">
   
