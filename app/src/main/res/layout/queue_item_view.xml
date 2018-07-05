@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?android:attr/selectableItemBackground">
+
+
+        <LinearLayout
+            android:id="@+id/Intro"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/numberTextView"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="17sp"/>
+
+
+            <com.atomic.android.views.CircularImageView
+            android:id="@+id/ceoImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/post_list_item_author_image_margin"
+            app:border="false"
+            app:shadow="true"
+            app:shadow_radius="@dimen/circle_image_shadow_radius"
+            app:shadow_color="@color/circle_image_shadow"
+            app:border_color="@color/gray"
+
+            />
+
+
+
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/mNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_below="@+id/mNameTextView"
+            android:textSize="13sp"/>
+
+
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.v7.widget.CardView>

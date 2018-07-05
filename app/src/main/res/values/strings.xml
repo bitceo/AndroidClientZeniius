@@ -1,0 +1,617 @@
+<!--
+  ~  Copyright 2017 Rozdoum
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~
+  -->
+
+<resources>
+    <string name="app_name">Zeniius</string>
+    <string name="label_create_post_activity">Create post</string>
+    <string name="label_post_detail_activity">Post detail</string>
+    <string name="label_image_detail_activity">Image</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_create_profile">Create profile</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_edit_profile">Edit profile</string>
+    <string name="title_activity_edit_post">Edit post</string>
+
+    <string name="text_take_photo">Take photo</string>
+    <string name="text_pick_photo">Pick from Gallery</string>
+    <string name="button_title_cancel">Cancel</string>
+    <string name="button_ok">OK</string>
+
+    <string name="hint_title">Title</string>
+    <string name="hint_description">Description</string>
+
+    <string name="message_post_was_created">Post was created</string>
+    <string name="error_fail_create_post">Fail to create post</string>
+    <string name="error_fail_load_image">Fail to load image</string>
+    <string name="error_fail_crop_image">Fail to crop image</string>
+    <string name="error_smaller_image">Image is too small. Required image size 100x100 px</string>
+    <string name="error_incorrect_file_type">Incorrect file type</string>
+    <string name="error_bigger_file">File size is bigger than 10Mb</string>
+    <string name="message_creating_post">Creating post ..</string>
+    <string name="message_saving">Saving ..</string>
+    <string name="warning_empty_image">Image is required</string>
+    <string name="warning_empty_title">Title is required</string>
+    <string name="warning_empty_description">Description is required</string>
+    <string name="error_post_title_length">Max length of the title should be less than 255 symbols</string>
+    <string name="error_fail_remove_post">Fail to remove post</string>
+    <string name="message_post_was_removed">Post was removed</string>
+    <string name="error_fail_update_post">Fail to update post</string>
+    <string name="error_post_was_removed">Post was removed</string>
+    <string name="confirm_deletion_post">Delete this post?</string>
+
+    <string name="comment_text_hint">Enter your comment…</string>
+    <string name="button_post_comment">Post comment</string>
+
+    <string name="label_comments">Comments (%1$d)</string>
+
+    <string name="create_post_menu_label">Post</string>
+    <string name="create_post_full_menu_label">Create post</string>
+    <string name="sign_out_menu_label">Sign out</string>
+    <string name="edit_profile_menu_label">Edit profile</string>
+    <string name="button_title_save">Done</string>
+    <string name="button_title_continue">Continue</string>
+
+    <!-- Strings related to registration and login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_conf_password">Confirm password</string>
+    <string name="action_create_profile">Continue</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="error_profile_name_length">Max length of the name should be less than 120 symbols</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_confirm_password">Wrong password confirmation</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="permissions_not_granted">Cancelling, required permissions are not granted</string>
+    <string name="error_fail_create_profile">Fail to create profile</string>
+    <string name="error_fail_update_profile">Fail to update profile</string>
+    <string name="text_login">Thank you for using our application! Please, sign in for continue your action.</string>
+
+    <string name="error_google_play_services">Google Play Services error.</string>
+    <string name="button_login_with_facebook">Login with facebook</string>
+    <string name="button_login_with_google">Login with google</string>
+
+
+    <string name="loading">Loading...</string>
+    <string name="removing">Removing...</string>
+    <string name="error_general">Something went wrong.</string>
+    <string name="error_general_post">Post was removed</string>
+
+    <!-- Strings related to login -->
+
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="profile_menu_item">Profile</string>
+    <string name="collapse_text_label">show less</string>
+    <string name="expand_text_label">show more</string>
+
+    <string name="complain_text">You can complain to this post if it contains violence,
+        bullying and threats, hate speech, tragic events and sexually explicit contents.
+        Nobody will see the post if you complain to it. You can\'t delete your complain.</string>
+
+    <string name="send_comment_button_label">Send</string>
+    <string name="posted_by_label">Posted by:</string>
+
+    <plurals name="posts_counter_format">
+        <item quantity="one">post</item>
+        <item quantity="other">posts</item>
+    </plurals>
+
+    <plurals name="likes_counter_format">
+        <item quantity="one">like</item>
+        <item quantity="other">likes</item>
+    </plurals>
+
+    <plurals name="need_counter_format">
+        <item quantity="one">Demand</item>
+        <item quantity="other">Demands</item>
+    </plurals>
+
+    <plurals name="offer_counter_format">
+        <item quantity="one">Ability</item>
+        <item quantity="other">Abilities</item>
+    </plurals>
+    <plurals name="question_counter_format">
+        <item quantity="one">Discussion</item>
+        <item quantity="other">Discussions</item>
+    </plurals>
+
+    <plurals name="event_counter_format">
+        <item quantity="one">Event</item>
+        <item quantity="other">Events</item>
+    </plurals>
+
+    <plurals name="other_format">
+        <item quantity="one">other</item>
+        <item quantity="other">others</item>
+    </plurals>
+
+
+    <string name="posts_label">Posts:</string>
+    <string name="complain_sent">Complain was sent successfully</string>
+    <string name="now_time_range">now</string>
+
+    <string name="duration_minutes_shortest">%1$d m</string>
+    <string name="duration_hours_shortest">%1$d h</string>
+    <string name="duration_days_shortest">%1$d d</string>
+    <string name="duration_week_shortest">%1$d w</string>
+
+    <string name="post_image_transition_name" translatable="false">post_image_transition</string>
+    <string name="post_author_image_transition_name" translatable="false">post_author_image_transition_name</string>
+    <string name="message_new_post_was_created">New post was created</string>
+
+    <plurals name="new_posts_counter_format">
+        <item quantity="one">%1$d new post</item>
+        <item quantity="other">%1$d new posts</item>
+    </plurals>
+
+    <string name="edit_comment_menu_item">Edit</string>
+    <string name="delete_comment_menu_item">Delete</string>
+    <string name="message_comment_was_removed">Comment was removed</string>
+    <string name="message_comment_was_edited">Comment was edited</string>
+    <string name="title_edit_comment">Edit comment</string>
+
+    <!--Firebase errors-->
+    <string name="permission_denied_error">Please check your rules to access the Firebase Realtime Database</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="email">Email Id</string>
+    <string name="passowrd">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="show_pwd">Show Password</string>
+    <string name="hide_pwd">Hide Password</string>
+    <string name="forgot">Forgot password?</string>
+    <string name="closebutton">Close Button for Activity</string>
+    <string name="newUser">Not a Member yet? Sign Up here.</string>
+    <string name="fullName">Full Name</string>
+    <string name="mobileNumber">Mobile Number</string>
+    <string name="location">Location</string>
+    <string name="confirmPassword">Confirm Password</string>
+
+
+
+
+    <string name="logout">Logout</string>
+    <string name="icon_tick"></string>
+
+    <string name="finish">Finish</string>
+    <string name="save">Save</string>
+
+    <string name="groupshared_activity">My groups</string>
+
+    <string name="forgot_pass_string">Please enter your old password and new password</string>
+    <string name="bottom_sheet_option_camera">Upload Use Camera</string>
+    <string name="bottom_sheet_option_gallery">Upload from Gallery</string>
+    <string name="bottom_sheet_option_heading">Upload Photo</string>
+    <string name="bottom_sheet_option_cancel_photo">Cancel</string>
+
+
+
+
+    <string name="internet_connection_failed">No internet connection</string>
+    <string name="PostFragment.title">Opportunity Feeds</string>
+    <string name="PostDetailsActivity.title">Detail Of Opportunity</string>
+    <string name="RegisterSubListActivity.title">Register List</string>
+    <string name="LikedSubListActivity.title">Liked List</string>
+
+    <string name="ConversationFragment.title">Conversations</string>
+
+    <string name="CEOListFragment.title">CEOs List</string>
+    <string name="CEOListFragment.searchHint">Search by name, phone number</string>
+    <string name="CEOListFragment.filterCEOTitle">Choose Areas to filter</string>
+    <string name="CEOListFragment.filterReset">Reset filter</string>
+
+    <string name="NotificationFragment.title">Notifications</string>
+    <string name="NotificationFragment.latest">Latest</string>
+
+
+    <string name="MoreFragment.title">Personal</string>
+    <string name="MoreFragment.profileDescription">Display the information</string>
+    <string name="MoreFragment.profileSetting">PROFILE SETTING</string>
+    <string name="MoreFragment.aboutZeniius">About Zeniius</string>
+    <string name="MoreFragment.changePassword">Change Password</string>
+    <string name="MoreFragment.support">SUPPORT</string>
+    <string name="MoreFragment.language">Language</string>
+    <string name="MoreFragment.policy">Privacy Policy</string>
+    <string name="MoreFragment.terms">Terms and Conditions</string>
+    <string name="MoreFragment.logout">Logout</string>
+
+    <string name="MoreFragment.Version">Version</string>
+    <string name="MoreFragment.UnknownVersion">Unknown Version</string>
+
+    <string name="ProfileActivity.title">Profile</string>
+    <string name="ProfileActivity.activities">Activities</string>
+    <string name="ProfileActivity.personalinformation">Personal Info</string>
+    <string name="ProfileActivity.companyinformation">Company Info</string>
+
+    <string name="PostDetailActivity.Postedby">Posted by:</string>
+    <string name="PostDetailActivity.EnterYourComment">Enter your comment...</string>
+    <string name="PostDetailActivity.Send">Send</string>
+    <string name="PostDetailActivity.ShowMoreComment">Show more comments...</string>
+
+    <string name="ViewUserProfileDetailFragment.title">User Information</string>
+    <string name="ViewUserProfileDetailFragment.general">General</string>
+    <string name="ViewUserProfileDetailFragment.contact">Contact</string>
+    <string name="ViewUserProfileDetailFragment.namecard">Name Card</string>
+    <string name="ViewUserProfileDetailFragment.about">About Me</string>
+    <string name="ViewUserProfileDetailFragment.frontNameCard">Front</string>
+    <string name="ViewUserProfileDetailFragment.backNameCard">Back</string>
+    <string name="EditGeneralUserProfileFragment.title">About Yourself</string>
+    <string name="EditGeneralUserProfileFragment.about">Please Describle Yourself</string>
+    <string name="EditContactUserProfileFragment.contact">Personal Contact</string>
+
+
+
+    <string name="ViewCompanyProfileDetailFragment.title">Company Information</string>
+    <string name="ViewCompanyProfileDetailFragment.general">About Company</string>
+    <string name="ViewCompanyProfileDetailFragment.contact">Company Contact</string>
+    <string name="ViewCompanyProfileDetailFragment.career">Careers</string>
+    <string name="ViewCompanyProfileDetailFragment.certificateOfIncorporation">Certificate of incorporation</string>
+
+    <string name="ViewCompanyProfileDetailFragment.nameCompany">Company Name</string>
+    <string name="ViewCompanyProfileDetailFragment.aboutCompany">About Company</string>
+    <string name="ViewCompanyProfileDetailFragment.taxId">Taxt Id</string>
+
+
+
+
+    <string name="EditGeneralCompanyProfileFragment.about">Describe your company</string>
+    <string name="EditCareerCompanyProfileFragment.title">Update Career</string>
+    <string name="EditCareerCompanyProfileFragment.listCareer">List your business areas</string>
+
+
+
+    <string name="General.fullname">Full name</string>
+    <string name="General.firstName">First Name</string>
+    <string name="General.middleName">Middle Name</string>
+    <string name="General.lastName">Last Name</string>
+    <string name="General.birthday">Birthday</string>
+    <string name="General.hint">Touch to edit</string>
+    <string name="General.hintRequire">Touch to edit (required)</string>
+    <string name="General.position">Position</string>
+    <string name="General.email">Email</string>
+    <string name="General.password">Password</string>
+    <string name="General.confirmpassword">Confirm Password</string>
+    <string name="General.showpassword">Show password</string>
+    <string name="General.hidepassword">Hide password</string>
+    <string name="General.forgotpassword"><u>Forgot password</u></string>
+    <string name="General.login">Login</string>
+    <string name="General.NotAMember">Not a Member yet? <u>Sign Up here.</u></string>
+    <string name="General.terms_conditions">By clicking SignUp you agree all the Terms and Conditions.</string>
+    <string name="General.signUp">SIGN UP</string>
+    <string name="General.already_user">Already have Account? <u>Login here.</u></string>
+    <string name="General.logout">Logout</string>
+    <string name="General.personalPhone">Personal Phone Numbers</string>
+    <string name="General.personalEmail">Personal Email</string>
+    <string name="General.personalFacebook">Personal Facebook</string>
+    <string name="General.updateProfile">Update Profile</string>
+    <string name="General.updateCompany">Update Company</string>
+    <string name="General.Cancel">Cancel</string>
+    <string name="General.Selected">selected</string>
+    <string name="General.ItemClicked">Item clicked:</string>
+    <string name="General.CompanyName">Company Name</string>
+    <string name="General.CompanyPhone">Company Phone Numbers</string>
+    <string name="General.CompanyEmail">Company Email</string>
+    <string name="General.CompanyAddress">Company Address</string>
+    <string name="General.CompanyFacebook">Company Facebook</string>
+    <string name="General.CompanyWebsite">Company Website</string>
+    <string name="General.CompanyCountry">Company Country</string>
+    <string name="General.CompanyCity">Company City/Province</string>
+    <string name="General.CompanyDistrict">Company District</string>
+    <string name="General.CompanyTax">Tax Id</string>
+    <string name="General.CompanyAbout">Describe your company</string>
+    <string name="General.ChooseYourCountry">[Choose your country]</string>
+    <string name="General.ChooseCareer">Choose business areas</string>
+    <string name="General.NoInformation">No Information</string>
+    <string name="General.GalleryView">Photos List</string>
+    <string name="General.AddDemand">added a new demand</string>
+    <string name="General.AddAbility">added a new ability</string>
+    <string name="General.AddDiscussion">added a new discussion</string>
+    <string name="General.AddEvent">added a new event</string>
+
+    <string name="General.Demand">Demand</string>
+    <string name="General.Ability">Ability</string>
+    <string name="General.Discussion">Discussion</string>
+    <string name="General.Event">Event</string>
+    <string name="General.ChooseOpportunity">[Choose opportunity]</string>
+    <string name="General.RemovedOpportunity">Opportunity was removed</string>
+
+    <string name="General.RemovedMessage">Message has been deleted</string>
+    <string name="General.AddedMember">New members join in group</string>
+    <string name="General.RemovedMember">A member has been removed</string>
+    <string name="General.GroupCreated">Group was created</string>
+    <string name="General.LeftMember">A member left group</string>
+    <string name="General.SystemMessage">System message</string>
+    <string name="General.JoinInGroup">join in group</string>
+    <string name="General.LoadMoreMessage"><u>Press to load more messages</u></string>
+    <string name="General.LoadingMessage"><u>Loading old messages...</u></string>
+
+    <string name="General.FilterCareer">Filter Areas</string>
+
+    <string name="General.ImageMessage">Image message</string>
+    <string name="General.FileMessage">File message</string>
+    <string name="General.VideoMessage">Video message</string>
+    <string name="General.OpportunityMessage">Opportunity message</string>
+
+    <string name="General.VideoMessageNotSupport">Video message. But we currently do not support video message in Android</string>
+
+    <string name="General.JoinAction">joined in</string>
+    <string name="General.LikeAction">liked</string>
+    <string name="General.CommentAction">commented on </string>
+    <string name="General.LikeCommentAction">liked your comment from</string>
+
+    <string name="General.Location">Location</string>
+    <string name="General.StartTime">Start Time</string>
+    <string name="General.EndTime">End Time</string>
+    <string name="General.Cost">Cost</string>
+    <string name="General.Free">Free</string>
+    <string name="General.Negotiation">Negotiation</string>
+    <string name="General.Range">range</string>
+    <string name="General.EstimatedRange">estimated range</string>
+    <string name="General.From">From</string>
+    <string name="General.To">To</string>
+    <string name="General.CareerHint">Search career...</string>
+    <string name="General.Register">Register</string>
+    <string name="General.Detail">Detail</string>
+    <string name="General.Registered">Already Registered</string>
+    <string name="General.RegisterList">Registers</string>
+    <string name="General.Success">Success</string>
+    <string name="General.Language"><u>Language:</u></string>
+    <string name="General.Chat">Chat</string>
+
+    <string name="AddPhotoBottomDialogFragment.uploadPhoto">Upload Photo</string>
+    <string name="AddPhotoBottomDialogFragment.useCamera">Upload Use Camera</string>
+    <string name="AddPhotoBottomDialogFragment.fromLibrary">Upload From Library</string>
+
+    <string name="General.Oldpassword">Old Password</string>
+    <string name="General.Newpassword">New Password</string>
+    <string name="General.Retypenewpassword">Retype New Password</string>
+    <string name="ChangePassword.title">Please enter your old password and new password</string>
+
+    <string name="General.Submit">SUBMIT</string>
+    <string name="General.Back">BACK</string>
+
+    <string name="General.EnterBothCredential">Enter both credentials.</string>
+    <string name="General.TwoPassDoesNotMatch">Both password does not match.</string>
+    <string name="General.WrongOldPass">Wrong old password.</string>
+    <string name="General.Error_authentication">Authentication failed.</string>
+    <string name="General.InvalidEmail">Your Email Id is Invalid.</string>
+    <string name="General.EmailEmpty">"Please enter your Email."</string>
+    <string name="General.EnterEmail">Please enter your Registered Email below:</string>
+    <string name="General.CheckEmail">Please check your email to change password</string>
+    <string name="General.SomethingWrong">There something wrong. Please try again</string>
+    <string name="General.AllFieldRequired">All fields are required.</string>
+    <string name="General.CheckedTerms">Please select Terms and Conditions</string>
+    <string name="General.ChoosePhoto">Please choose photo</string>
+    <string name="General.InvalidBirthday">Invalid Birthday format</string>
+    <string name="General.Zeniius">ZENIIUS</string>
+    <string name="Welcome.title">Welcome to Zeniius!</string>
+    <string name="Welcome.account">Account</string>
+    <string name="Welcome.line1">+ You are in the queue to actived the account by admin. We will authorize all your provided information and then will active your account.</string>
+    <string name="Welcome.line2">+ To make the activation process faster, please press the button Completed Information below and completed the form.</string>
+    <string name="Welcome.line3">+ You can contact to the admin: (+84) 902074172 (Telegram, SMS) or email: hotro.zeniius@gmail.com to be suppoted.</string>
+    <string name="Welcome.completedInformation">Completed Information</string>
+    <string name="Completed.companyProfilePicture"> Please choose avatar for your company (*)</string>
+    <string name="Completed.moreInfo"> More informations completed, other CEOs will know your company more</string>
+    <string name="Completed.information">Company Information</string>
+    <string name="Completed.loadingText">Uploading images. Please wait ...</string>
+    <string name="General.loadingText">Uploading images. Please wait ...</string>
+    <string name="Completed.title">Information Form</string>
+
+
+    <string name="career_activity.title">Career List</string>
+    <string name="changepassword_activity.title">Change password</string>
+    <string name="aboutzeniius_activity.title">About Zeniius</string>
+
+
+
+    <string name="StepOneCreatedPost.general">Basic Information</string>
+    <string name="StepOneCreatedPost.opportunitytype">Opportunity Type</string>
+    <string name="StepOneCreatedPost.opportunityTitle">Title</string>
+    <string name="StepOneCreatedPost.opportunityDescription">Content</string>
+    <string name="StepOneCreatedPost.opportunityImageTitle">Feature images (optional)</string>
+    <string name="StepOneCreatedPost.titleCreateMode">Create Post (Step 1/2 )</string>
+    <string name="StepOneCreatedPost.titleEditMode">Edit Post (Step 1/2 )</string>
+    <string name="StepOneCreatedPost.typeError">Please choose type of opportunity</string>
+    <string name="StepOneCreatedPost.contentError">Please field the Title and the Content</string>
+    <string name="StepOneCreatedPost.careerError">Please choose the business area</string>
+
+    <string name="StepTwoCreatedPost.titleCreateMode">Create Post (Step 2/2 )</string>
+    <string name="StepTwoCreatedPost.titleEditMode">Edit Post (Step 2/2 )</string>
+    <string name="StepTwoCreatedPost.costSection">Cost Information</string>
+    <string name="StepTwoCreatedPost.costDescription">Cost Description</string>
+    <string name="StepTwoCreatedPost.costDescriptionHint">Eg: cost, tip, budget,...</string>
+
+    <string name="StepTwoCreatedPost.costType">Cost Type</string>
+    <string name="StepTwoCreatedPost.freeType">Free</string>
+    <string name="StepTwoCreatedPost.negotiationType">Negotiation</string>
+    <string name="StepTwoCreatedPost.rangeType">Cost Range</string>
+
+    <string name="StepTwoCreatedPost.fromCost">From (VNĐ):</string>
+    <string name="StepTwoCreatedPost.toCost">To (VNĐ):</string>
+    <string name="StepTwoCreatedPost.fromCostHint">5000(5 millions)</string>
+    <string name="StepTwoCreatedPost.toCostHint">9000(9 millions)</string>
+    <string name="StepTwoCreatedPost.isEstimated">Is estimated ?</string>
+
+    <string name="StepTwoCreatedPost.timeLocation">Location and Time</string>
+    <string name="StepTwoCreatedPost.location">Location</string>
+    <string name="StepTwoCreatedPost.startTime">Start Time:</string>
+    <string name="StepTwoCreatedPost.endTime">End Time:</string>
+
+    <string name="StepTwoCreatedPost.policy">Policy</string>
+    <string name="StepTwoCreatedPost.acceptRegister">Accept to Register</string>
+    <string name="StepTwoCreatedPost.allCEO">All of CEOs</string>
+    <string name="StepTwoCreatedPost.myGroups"><u>My groups (Touch to choose groups)</u></string>
+    <string name="StepTwoCreatedPost.otherGroups"><u>Other groups (Touch to choose groups)</u></string>
+    <string name="StepTwoCreatedPost.currentGroup">Current group:</string>
+    <string name="StepTwoCreatedPost.infoText">All the information below is not required. But it may be useful for you and the CEO networks.</string>
+    <string name="StepTwoCreatedPost.endTimeError">End Time has to be greater than current time </string>
+    <string name="StepTwoCreatedPost.beginEndTimeError">Start Time has to less than End Time </string>
+
+    <string name="StepTwoCreatedPost.isPublicError">You must set "The post is public for all CEO" or "Share at least one group" </string>
+    <string name="StepTwoCreatedPost.MoneyFromToError">The From Money must be less than or equal the To Money </string>
+
+    <string name="General.Complain">Complain</string>
+    <string name="General.EditPost">Edit post</string>
+    <string name="General.DeletePost">Delete post</string>
+    <string name="General.PrivateInformation">(This is private information)</string>
+    <string name="General.NextStep">Next</string>
+    <string name="General.Done">Done</string>
+    <string name="General.And">and</string>
+    <string name="General.You">You</string>
+    <string name="General.EnterBothCredentials">All fields are required</string>
+    <string name="General.Error_NotSupportForDirectChannel">This feature do not support for personal chat. It is used in group chat.</string>
+
+    <string name="Chat.ConfirmSendImage">Do you want to send photos?</string>
+    <string name="Chat.SendPhoto">Send photo</string>
+    <string name="Chat.UploadInProgress">Upload in progress..</string>
+    <string name="Chat.Create_group"><u>Create group </u></string>
+    <string name="Chat.SetAGroupName">Set a group name</string>
+    <string name="Chat.NewGroup">New Group</string>
+    <string name="Chat.AddMember">Add members</string>
+    <string name="Chat.MyGroups">My groups</string>
+    <string name="Chat.Contacts">Contacts</string>
+    <string name="Chat.Groups"><u>Groups</u></string>
+    <string name="Chat.NoConversation">No conversation!</string>
+    <string name="Chat.DescriptionNoConversation">Press the button in the top right corner to start a new chat!</string>
+
+    <string name="Chat.Members">Members</string>
+    <string name="Chat.GroupAdmin">Group Admin</string>
+    <string name="Chat.CreatedBy">Created by:</string>
+    <string name="Chat.CreatedOn">Created on:</string>
+    <string name="Chat.UploadGroupPicture"><u>✎ Upload group avatar</u></string>
+    <string name="fragment_tab_home_direct_message_button_label">Direct Message</string>
+    <string name="Chat.RemoveUser">Remove from group</string>
+    <string name="Chat.ViewUser">View user profile</string>
+    <string name="Chat.ChatUser">Chat with user</string>
+    <string name="Chat.LeaveGroup">Leave group</string>
+    <string name="fragment_tab_home_new_chat_activity_button_label">Start with an activity</string>
+    <string name="Chat.Remove">Remove</string>
+    <string name="Chat.RemoveMessage">Do you really want to remove <b>%1$s</b> from the group?</string>
+    <string name="Chat.LeaveMessage">Do you really want to leave the group</string>
+    <string name="Chat.Alert">Alert</string>
+
+
+    <!--CHAT SECTION-->
+    <!--dates-->
+    <string name="today">today</string>
+    <string name="yesterday">yesterday</string>
+
+
+    <string name="string_conversation_list_activity_title">Conversations</string>
+
+
+
+
+
+
+    <!--create_group_activity-->
+    <string name="activity_new_group_icon_label">Add\nphoto</string>
+
+    <string name="menu_activity_new_group_action_next">Next</string>
+
+    <!--add_members_activity-->
+    <string name="add_members_activity_searchview_query_hint">Search contact</string>
+    <string name="add_members_activity_contact_already_added_label">Already added to the group</string>
+    <string name="add_members_activity_contact_not_added_label">contact is not present in the list</string>
+    <string name="activity_add_member_to_chat_group_selected_contacts_title">Selected contacts</string>
+    <string name="add_members_activity_contacts_title">Contact List</string>
+    <string name="menu_add_members_action_create">Create</string>
+    <string name="menu_add_members_action_next">Next</string>
+
+    <!--activity contact list -->
+    <string name="label_no_contacts_error_title">No contact found</string>
+    <string name="label_no_contacts_error_subtitle">Change the search parameters</string>
+    <string name="activity_contact_list_error_cannot_create_group_offline_label">You can not create the group if you are offline</string>
+
+    <!--activity_group_admin_panel-->
+
+
+
+    <string name="activity_group_admin_panel_group_id_label">id </string>
+    <string name="activity_group_admin_panel_not_available_members_label">Information about members are now unavailable</string>
+
+    <string name="menu_activity_group_admin_panel_activity_cannot_add_member_offline">Cannot add a member if you are offline</string>
+
+    <!--bottom_sheet_group_admin_panel_member-->
+    <string name="bottom_sheet_group_admin_panel_member_remove_member_btn_label">Remove member</string>
+    <string name="bottom_sheet_group_admin_panel_member_leave_group_btn_label">Leave group</string>
+    <string name="bottom_sheet_group_admin_panel_member_see_profile_btn_label">See profile</string>
+    <string name="bottom_sheet_group_admin_panel_member_send_message_btn_label">Send message</string>
+    <string name="bottom_sheet_group_admin_panel_member_btn_cancel_label">Cancel</string>
+
+    <!--activity_conversation_list-->
+
+
+    <!--fragment_conversation_list-->
+
+    <!--bottom_sheet_group_admin_panel_member-->
+
+
+
+    <!--activity_message_list-->
+    <string name="activity_message_list_group_info_you_label">you</string>
+    <string name="activity_message_list_convers_with_presence_online">Online</string>
+    <string name="activity_message_list_convers_with_presence_offline">Offline</string>
+
+    <string name="activity_message_list_progress_dialog_upload_failed">Cannot complete the upload</string>
+    <string name="activity_message_list_no_message_error_title_label">You have been removed from the group</string>
+    <string name="activity_message_list_no_message_error_subtitle_label">Contact the administrator for more details</string>
+
+
+    <string name="activity_message_list_type_image_label">image</string>
+    <string name="activity_message_list_type_file_label">file</string>
+
+    <!--bottom_sheet_attach-->
+    <string name="bottom_sheet_attach_images_label">Images</string>
+    <string name="bottom_sheet_attach_documents_label">Documents</string>
+
+    <!--activity_public_profile-->
+    <string name="activity_public_profile_presence_online">Online</string>
+    <string name="activity_public_profile_presence_offline">Offline</string>
+
+    <!--activity_group_list-->
+
+    <string name="activity_my_groups_list_error_title">No groups</string>
+    <string name="activity_my_groups_list_error_subtitle">You are not a member of any group</string>
+
+    <!--bottom_sheet_conversation_list-->
+    <string name="bottom_sheet_conversation_list_confirm_delete_conversation_alert_title">Delete chat</string>
+    <string name="bottom_sheet_conversation_list_confirm_delete_conversation_alert_message">Do you really want to delete the chat?\n The operation cannot be cancelled.</string>
+    <string name="bottom_sheet_conversation_list_confirm_delete_conversation_button_label">Delete chat</string>
+    <string name="bottom_sheet_conversation_list_confirm_delete_conversation_alert_positive_button_label">delete chat</string>
+    <string name="bottom_sheet_conversation_list_confirm_delete_conversation_alert_positive_button_negative">cancel</string>
+
+    <!--activity_chat_login-->
+    <string name="activity_chat_login_no_account_label">No account?</string>
+    <string name="activity_chat_login_signup_label">Sign up</string>
+
+    <!--activity_choose_chat_group_activity-->
+    <string name="activity_choose_chat_group_activity_activity_title">Groups</string>
+
+
+
+
+
+
+
+</resources>

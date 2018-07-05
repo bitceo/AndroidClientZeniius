@@ -1,0 +1,570 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/white"
+android:gravity="center_horizontal"
+android:orientation="vertical"
+android:padding="@dimen/intrinsic_padding"
+tools:context="com.atomic.android.activities.authentication.CreateProfileActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/imageContainer"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/progress_bar_size"
+                android:layout_height="@dimen/progress_bar_size"
+                android:layout_centerInParent="true"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/uploadProfilePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:textColor="@color/blue"
+            android:text = "✎ Upload"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_alignBottom="@id/imageContainer"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginTop="4dp"
+        android:foreground="?android:attr/selectableItemBackground">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:layout_marginLeft="4dp">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/user_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/lastNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textStyle="bold"
+                        android:text="@string/General.lastName"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/lastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/lastNameTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="textCapWords"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:hint="@string/General.hintRequire"
+                        android:textColorHint="@color/gray"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:background="@color/white_greyish" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/user_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/middleNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textStyle="bold"
+                        android:text="@string/General.middleName"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/middleName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/middleNameTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="textCapWords"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:hint="@string/General.hint"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:background="@color/white_greyish" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/user_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/firstNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textStyle="bold"
+                        android:text="@string/General.firstName"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/firstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/firstNameTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="textCapWords"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:hint="@string/General.hintRequire"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:background="@color/white_greyish" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/birthday_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/birthdayTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textStyle="bold"
+                        android:text="@string/General.birthday"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/birthdayTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="textCapWords"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:hint="@string/General.hintRequire"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:background="@color/white_greyish" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/email_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/emailTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textStyle="bold"
+                        android:text="@string/General.personalEmail"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/emailTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:hint="@string/General.hintRequire"
+                        android:textColorHint="@color/gray"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:background="@color/white_greyish" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/phone_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/phoneTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textStyle="bold"
+                        android:text="@string/General.personalPhone"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/phoneTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:hint="@string/General.hintRequire"
+                        android:textColorHint="@color/gray"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:background="@color/white_greyish" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/factory_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/companyTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:textStyle="bold"
+                        android:text="@string/General.CompanyName"
+                        android:textColor="@color/primary_dark"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/companyName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/companyTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:hint="@string/General.hintRequire"
+                        android:textColorHint="@color/gray"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:background="@color/white_greyish" />
+
+            <Button
+                android:id="@+id/careerBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/loginbutton_selector"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"
+                android:text="@string/General.ChooseCareer"
+                android:textColor="@color/primary_dark"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:background="@color/white_greyish" />
+
+            <LinearLayout
+                android:id="@+id/wrapLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/careerLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="2px"
+                android:background="@color/white_greyish" />
+
+            <TextView
+                android:id="@+id/logoutProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/General.logout"
+                android:textColor="@color/dark_red"
+                android:textSize="15sp" />
+
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>
+
+</ScrollView>
+

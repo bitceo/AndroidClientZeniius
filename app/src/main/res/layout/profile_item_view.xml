@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.atomic.android.views.CircularImageView
+            android:id="@+id/ceoImageView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="@dimen/post_list_item_author_image_margin"
+            app:border="false"
+            app:shadow="true"
+            app:shadow_radius="@dimen/circle_image_shadow_radius"
+            app:shadow_color="@color/circle_image_shadow"
+            app:border_color="@color/gray"
+
+            />
+
+        <TextView
+            android:id="@+id/mNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:paddingRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_toRightOf="@id/ceoImageView"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily ="sans-serif-light"
+            android:textColor="@color/primary_dark"/>
+
+        <TextView
+            android:id="@+id/profileDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingBottom="4dp"
+            android:paddingRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_below="@id/mNameTextView"
+            android:layout_toRightOf="@id/ceoImageView"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/careerDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:paddingBottom="4dp"
+            android:paddingRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:maxLines="3"
+            android:layout_below="@id/profileDescription"
+            android:layout_toRightOf="@id/ceoImageView"
+            android:textSize="13sp"/>
+
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

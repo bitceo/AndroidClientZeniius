@@ -1,0 +1,784 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/primary"
+android:gravity="center_horizontal"
+android:orientation="vertical"
+android:padding="@dimen/intrinsic_padding">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/imageContainer"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="@dimen/progress_bar_size"
+                android:layout_height="@dimen/progress_bar_size"
+                android:layout_centerInParent="true"/>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/uploadProfilePicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="20dp"
+            android:textColor="@color/blue"
+            android:text = "✎ Upload"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_alignBottom="@id/imageContainer"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:foreground="?android:attr/selectableItemBackground">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/generalTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/primary_dark"
+                    android:gravity="center"
+                    android:text="@string/ViewCompanyProfileDetailFragment.general"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editGeneralTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textColor="@color/white"
+                    android:text = "✎ Edit"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:layout_alignTop="@id/generalTextView"
+                    android:layout_alignRight="@id/generalTextView"
+                    android:visibility ="gone"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/factory_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/nameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/ViewCompanyProfileDetailFragment.nameCompany"
+                        android:textColor="@color/secondary_light"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nameTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="textCapWords"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/about_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/aboutTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/ViewCompanyProfileDetailFragment.aboutCompany"
+                        android:textColor="@color/secondary_light"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/about"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/aboutTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="textMultiLine"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/tax_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/masothueTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/ViewCompanyProfileDetailFragment.taxId"
+                        android:textColor="@color/secondary_light"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/masothue"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/masothueTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="textCapWords"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/contactTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/primary_dark"
+                    android:gravity="center"
+                    android:text="@string/ViewCompanyProfileDetailFragment.contact"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editContactTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textColor="@color/white"
+                    android:text = "✎ Edit"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:layout_alignTop="@id/contactTextView"
+                    android:layout_alignRight="@id/contactTextView"
+                    android:visibility ="gone"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/phone_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/phoneTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/General.CompanyPhone"
+                        android:textColor="@color/secondary_light"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/phoneTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="textCapWords"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/email_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/emailTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/General.CompanyEmail"
+                        android:textColor="@color/secondary_light"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/emailTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="textMultiLine"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/address_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/addresssTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/General.CompanyAddress"
+                        android:textColor="@color/secondary_light"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/addresssTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="textMultiLine"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/facebook_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/facebookTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/General.CompanyFacebook"
+                        android:textColor="@color/secondary_light"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/facebook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/facebookTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="textCapWords"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/website_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/websiteTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/General.CompanyWebsite"
+                        android:textColor="@color/secondary_light"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/website"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/websiteTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="textCapWords"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:id="@+id/careerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/careerTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/primary_dark"
+                    android:gravity="center"
+                    android:text="@string/ViewCompanyProfileDetailFragment.career"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editCareerTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textColor="@color/white"
+                    android:text = "✎ Edit"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:layout_alignTop="@id/careerTextView"
+                    android:layout_alignRight="@id/careerTextView"
+                    android:visibility ="gone"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:foreground="?android:attr/selectableItemBackground">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/gpkdTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/primary_dark"
+                    android:gravity="center"
+                    android:text="@string/ViewCompanyProfileDetailFragment.certificateOfIncorporation"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/editGPKDTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:textColor="@color/white"
+                    android:text = "✎ Upload"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:layout_alignTop="@id/gpkdTextView"
+                    android:layout_alignRight="@id/gpkdTextView"
+                    android:visibility ="gone"/>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/loadingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:text="@string/General.loadingText"
+                android:visibility ="gone"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/gpkdImageView1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="10dp"
+                    android:scaleType="centerCrop"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/namecard_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingBottom="10dp"
+                    android:layout_alignParentRight="true">
+
+                    <ImageView
+                        android:id="@+id/gpkdImageView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:foreground="@drawable/image_overlay"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/namecard_profiledetail" />
+
+                    <TextView
+                        android:id="@+id/imageNumberTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        android:layout_alignTop="@id/gpkdImageView2"
+                        android:layout_alignBottom="@id/gpkdImageView2"
+                        android:layout_alignLeft="@id/gpkdImageView2"
+                        android:layout_alignRight="@id/gpkdImageView2"
+                        android:visibility ="gone"/>
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
+
+</ScrollView>

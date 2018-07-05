@@ -1,0 +1,67 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/intrinsic_padding">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:paddingLeft="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="8dp"
+            android:textColor="@color/secondary_text"
+            android:text="@string/CEOListFragment.filterCEOTitle"
+            android:textSize="15sp"
+             />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <Button
+            android:id="@+id/careerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/loginbutton_selector"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:text="@string/General.ChooseCareer"
+            android:textColor="@color/primary_dark"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="@color/white_greyish" />
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

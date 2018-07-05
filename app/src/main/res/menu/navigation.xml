@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="Feeds"
+        app:showAsAction="always|withText"/>
+
+    <item
+    android:id="@+id/navigation_ceo"
+    android:icon="@drawable/ceolist"
+    android:title="CEOs"
+    app:showAsAction="always|withText"/>
+
+    <item
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/chat"
+        android:title="Chat"
+        app:showAsAction="always|withText"/>
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_notifications_black_24dp"
+        android:title="Noti"
+        app:showAsAction="always|withText"/>
+
+    <item
+        android:id="@+id/navigation_more"
+        android:icon="@drawable/more"
+        android:title="More"
+        app:showAsAction="always|withText"/>
+
+
+
+</menu>

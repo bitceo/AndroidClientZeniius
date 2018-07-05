@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    tools:context=".activities.authentication.AuthenticationActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary" >
+
+
+        <LinearLayout
+            android:id="@+id/loadingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:visibility ="gone">
+
+            <ImageView
+                android:id="@+id/logoImageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/genie"
+                android:scaleType="fitCenter" />
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:padding="10dp"
+                android:text="@string/General.Zeniius"
+                android:textColor="@color/white_greyish"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <com.victor.loading.newton.NewtonCradleLoading
+                android:id="@+id/newton_cradle_loading"
+                android:layout_width="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+               />
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:id="@+id/frameAuthenticationContainer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            />
+    </RelativeLayout>
+
+</ScrollView>

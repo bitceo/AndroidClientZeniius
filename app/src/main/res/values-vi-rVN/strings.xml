@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Zeniius</string>
+    <string name="label_create_post_activity">Tạo bài viết</string>
+
+    <string name="title_activity_login">Đăng nhập</string>
+    <string name="label_image_detail_activity">Hình ảnh</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_name">Mật khẩu</string>
+    <string name="login">Đăng Nhập</string>
+
+
+    <string name="internet_connection_failed">Mất kết nối mạng</string>
+
+
+    <string name="PostFragment.title">Bảng tin</string>
+    <string name="PostDetailsActivity.title">Chi tiết cơ hội</string>
+    <string name="RegisterSubListActivity.title">Danh sách đăng ký</string>
+    <string name="LikedSubListActivity.title">Danh sách thích bài viết</string>
+
+
+    <string name="ConversationFragment.title">Danh sách chat</string>
+
+    <string name="CEOListFragment.title">Danh sách CEO</string>
+    <string name="CEOListFragment.searchHint">Tìm kiếm bằng tên, số đt</string>
+    <string name="CEOListFragment.filterCEOTitle">Chọn ngành nghề để lọc</string>
+    <string name="CEOListFragment.filterReset">Bỏ lọc</string>
+
+    <string name="NotificationFragment.title">Thông báo</string>
+    <string name="NotificationFragment.latest">Mới nhất</string>
+
+    <string name="MoreFragment.title">Cá nhân</string>
+    <string name="MoreFragment.profileDescription">Hiển thị thông tin</string>
+    <string name="MoreFragment.profileSetting">CẤU HÌNH CÁ NHÂN</string>
+    <string name="MoreFragment.aboutZeniius">Về Zeniius</string>
+    <string name="MoreFragment.changePassword">Đổi mật khẩu</string>
+    <string name="MoreFragment.support">TRỢ GIÚP</string>
+    <string name="MoreFragment.language">Ngôn ngữ</string>
+    <string name="MoreFragment.policy">Chính sách bảo mật</string>
+    <string name="MoreFragment.terms">Thoả thuận sử dụng</string>
+    <string name="MoreFragment.logout">Đăng thoát</string>
+    <string name="MoreFragment.Version">Phiên bản</string>
+    <string name="MoreFragment.UnknownVersion">Phiên bản không xác định</string>
+
+    <string name="ProfileActivity.title">Trang cá nhân</string>
+    <string name="ProfileActivity.activities">Hoạt động</string>
+    <string name="ProfileActivity.personalinformation">Thông tin</string>
+    <string name="ProfileActivity.companyinformation">Công ty</string>
+
+    <string name="PostDetailActivity.Postedby">Được đăng bởi:</string>
+    <string name="PostDetailActivity.EnterYourComment">Nhập bình luận...</string>
+    <string name="PostDetailActivity.Send">Send</string>
+    <string name="PostDetailActivity.ShowMoreComment">Xem thêm bình luận...</string>
+
+
+    <string name="ViewUserProfileDetailFragment.title">Thông tin cá nhân</string>
+    <string name="ViewUserProfileDetailFragment.general">Tổng quan</string>
+    <string name="ViewUserProfileDetailFragment.contact">Liên hệ</string>
+    <string name="ViewUserProfileDetailFragment.namecard">Name Card</string>
+    <string name="ViewUserProfileDetailFragment.about">Thông tin về tôi</string>
+    <string name="ViewUserProfileDetailFragment.frontNameCard">Mặt trước</string>
+    <string name="ViewUserProfileDetailFragment.backNameCard">Mặt sau</string>
+    <string name="EditGeneralUserProfileFragment.title">Giới thiệu về bản thân</string>
+    <string name="EditGeneralUserProfileFragment.about">Mô tả về bản thân</string>
+    <string name="EditContactUserProfileFragment.contact">Liên hệ cá nhân</string>
+
+
+    <string name="ViewCompanyProfileDetailFragment.title">Thông tin công ty</string>
+    <string name="ViewCompanyProfileDetailFragment.general">Giới thiệu về công ty</string>
+    <string name="ViewCompanyProfileDetailFragment.contact">Liên hệ công ty</string>
+    <string name="ViewCompanyProfileDetailFragment.career">Ngành nghề</string>
+    <string name="ViewCompanyProfileDetailFragment.certificateOfIncorporation">Giấy phép kinh doanh</string>
+
+    <string name="ViewCompanyProfileDetailFragment.nameCompany">Tên công ty</string>
+    <string name="ViewCompanyProfileDetailFragment.aboutCompany">Thông tin về công ty</string>
+    <string name="ViewCompanyProfileDetailFragment.taxId">Mã số thuế </string>
+    <string name="EditGeneralCompanyProfileFragment.about">Mô tả về công ty</string>
+    <string name="EditCareerCompanyProfileFragment.title">Cập nhật ngành nghề</string>
+    <string name="EditCareerCompanyProfileFragment.listCareer">Ngành nghề</string>
+
+
+
+    <string name="General.fullname">Họ và tên</string>
+    <string name="General.firstName">Tên</string>
+    <string name="General.middleName">Tên đệm</string>
+    <string name="General.lastName">Họ</string>
+    <string name="General.birthday">Ngày sinh</string>
+    <string name="General.position">Chức vụ</string>
+    <string name="General.hint">Chạm để chỉnh sửa</string>
+    <string name="General.hintRequire">Chạm để chỉnh sửa (bắt buộc)</string>
+    <string name="General.email">Email</string>
+    <string name="General.password">Mật khẩu</string>
+    <string name="General.confirmpassword">Nhập lại mật khẩu</string>
+    <string name="General.showpassword">Hiện mật khẩu</string>
+    <string name="General.hidepassword">Ẩn mật khẩu</string>
+    <string name="General.forgotpassword"><u>Quên mật khẩu?</u></string>
+    <string name="General.login">Đăng nhập</string>
+    <string name="General.NotAMember">Chưa là thành viên? <u>Đăng ký ở đây.</u></string>
+    <string name="General.terms_conditions">Bằng việc đăng ký, bạn đồng ý với các Thoả Thuận Sử Dụng của chúng tôi.</string>
+    <string name="General.signUp">ĐĂNG KÝ</string>
+    <string name="General.already_user">Đã có Tài khoản? <u>Nhấn vào đây để Đăng nhập.</u></string>
+    <string name="General.personalPhone">Điện thoại cá nhân</string>
+    <string name="General.personalEmail">Email cá nhân</string>
+    <string name="General.personalFacebook">Facebook cá nhân</string>
+
+    <string name="General.CompanyName">Tên công ty</string>
+    <string name="General.CompanyPhone">Điện thoại công ty</string>
+    <string name="General.CompanyEmail">Email công ty</string>
+    <string name="General.CompanyAddress">Địa chỉ công ty</string>
+    <string name="General.CompanyFacebook">Facebook công ty</string>
+    <string name="General.CompanyWebsite">Website công ty</string>
+    <string name="General.CompanyCountry">Quốc gia</string>
+    <string name="General.CompanyCity">Tỉnh/Thành phố</string>
+    <string name="General.CompanyDistrict">Quận/Huyện</string>
+    <string name="General.CompanyTax">Mã số thuế</string>
+    <string name="General.CompanyAbout">Mô tả thêm về công ty</string>
+    <string name="General.ChooseYourCountry">[Chọn quốc gia]</string>
+    <string name="General.ChooseCareer">Chọn ngành nghề</string>
+    <string name="General.NoInformation">Chưa có thông tin</string>
+    <string name="General.FilterCareer">Lọc ngành nghề</string>
+    <string name="General.AddDemand">đã đăng một nhu cầu mới</string>
+    <string name="General.AddAbility">đã đăng một năng lực mới</string>
+    <string name="General.AddDiscussion">đã đăng một chủ đề mới</string>
+    <string name="General.AddEvent">đã đăng một sự kiện mới</string>
+
+    <string name="General.Demand">Nhu cầu</string>
+    <string name="General.Ability">Năng lực</string>
+    <string name="General.Discussion">Thảo luận</string>
+    <string name="General.Event">Sự kiện</string>
+    <string name="General.ChooseOpportunity">[Chọn loại cơ hội]</string>
+    <string name="General.RemovedOpportunity">Cơ hội/Thảo luận/Sự kiện đã bị xoá</string>
+
+    <string name="General.JoinAction">đã tham gia vào</string>
+    <string name="General.LikeAction">đã thích</string>
+    <string name="General.CommentAction">đã bình luận vào </string>
+    <string name="General.LikeCommentAction">đã thích một bình luận của bạn trong</string>
+
+
+    <string name="General.Location">Địa điểm</string>
+    <string name="General.StartTime">Thời gian bắt đầu</string>
+    <string name="General.EndTime">Thời gian kết thúc</string>
+    <string name="General.Cost">Chi phí</string>
+    <string name="General.Free">Miễn phí</string>
+    <string name="General.Negotiation">Thương lượng</string>
+    <string name="General.Range">trong khoảng</string>
+    <string name="General.EstimatedRange">trong khoảng ước lượng</string>
+    <string name="General.From">Từ</string>
+    <string name="General.To">Đến</string>
+    <string name="General.logout">Đăng thoát</string>
+    <string name="General.Chat">Chat</string>
+
+    <string name="General.updateProfile">Cập nhật cá nhân</string>
+    <string name="General.updateCompany">Cập nhật công ty</string>
+    <string name="General.Cancel">Huỷ</string>
+    <string name="General.Register">Đăng ký tham gia</string>
+    <string name="General.Detail">Chi tiết</string>
+    <string name="General.Registered">Đã đăng ký tham gia</string>
+    <string name="General.RegisterList">Đăng ký</string>
+    <string name="General.Success">Thành công</string>
+    <string name="General.Language"><u>Ngôn ngữ:</u></string>
+    <string name="AddPhotoBottomDialogFragment.uploadPhoto">Tải hình lên</string>
+    <string name="AddPhotoBottomDialogFragment.useCamera">Tải hình bằng camera</string>
+    <string name="AddPhotoBottomDialogFragment.fromLibrary">Tải hình từ thư viện</string>
+
+    <string name="General.Oldpassword">Mật khẩu cũ</string>
+    <string name="General.Newpassword">Mật khẩu mới</string>
+    <string name="General.Retypenewpassword">Nhập lại mật khẩu mới</string>
+    <string name="ChangePassword.title">Vui lòng nhập mật khẩu cũ và mật khẩu mới</string>
+    <string name="General.PrivateInformation">(Đây là thông tin riêng tư)</string>
+    <string name="General.CareerHint">Tìm kiếm ngành nghề ...</string>
+    <string name="General.Submit">GỬI</string>
+    <string name="General.Back">QUAY LẠI</string>
+    <string name="General.EnterBothCredentials">Vui lòng nhập đủ thông tin</string>
+    <string name="General.TwoPassDoesNotMatch">Mật khẩu và mật khẩu nhập lại không trùng nhau</string>
+    <string name="General.WrongOldPass">Sai mật khẩu cũ</string>
+    <string name="General.Error_authentication">Đăng nhập thất bại.</string>
+    <string name="General.InvalidEmail">Email không đúng chuẩn</string>
+    <string name="General.EmailEmpty">"Vui lòng nhập email."</string>
+    <string name="General.EnterEmail">Xin vui lòng nhập lại email đã đăng ký:</string>
+    <string name="General.CheckEmail">Xin vui lòng kiểm tra email để thay đổi mật khẩu.</string>
+    <string name="General.SomethingWrong">Có lỗi xảy ra. Vui lòng thử lại</string>
+    <string name="General.AllFieldRequired">Xin vui lòng nhập đầy đủ thông tin</string>
+    <string name="General.CheckedTerms">Xin vui lòng đồng ý Thoả thuận Sử dụng</string>
+    <string name="General.ChoosePhoto">Xin vui lòng chọn hình ảnh</string>
+    <string name="General.InvalidBirthday">Ngày sinh không hợp lệ</string>
+    <string name="General.Selected">được chọn</string>
+    <string name="General.ItemClicked">Ngành nghề được chọn:</string>
+    <string name="General.Zeniius">ZENIIUS</string>
+    <string name="Welcome.title">Chúc mừng bạn đăng ký thành công Zeniius!</string>
+    <string name="Welcome.account">Tài khoản</string>
+    <string name="Welcome.line1">+ Bạn đang được vào hàng đợi để được admin kích hoạt tài khoản. Chúng tôi sẽ xác thực các thông tin mà bạn cung cấp và sau đó kích hoạt tài khoản cho bạn.</string>
+    <string name="Welcome.line2">+ Để quá trình kích hoạt tài khoản nhanh hơn, bạn vui lòng nhấn vào nút Hoàn Thiện Thông Tin" ở phía dưới và điền đầy đủ thông tin.</string>
+    <string name="Welcome.line3">+ Bạn có thể nhắn tin tới admin: (+84) 902074172 (Telegram, SMS) hoặc email: hotro.zeniius@gmail.com để được trợ giúp.</string>
+    <string name="Welcome.completedInformation">Hoàn thiện thông tin</string>
+    <string name="Completed.companyProfilePicture"> Vui lòng chọn ảnh đại diện công ty(*)</string>
+    <string name="Completed.moreInfo"> Điền càng nhiều thông tin thì các CEO khác sẽ biết đến công ty bạn nhiều hơn</string>
+    <string name="Completed.information">Thông tin công ty</string>
+    <string name="Completed.loadingText">Đang tải hình ảnh lên. Vui lòng chờ đợi ...</string>
+    <string name="General.loadingText">Đang tải hình ảnh lên. Vui lòng chờ đợi ...</string>
+    <string name="Completed.title">Mẫu Hoàn Thiện Thông Tin</string>
+
+    <string name="StepOneCreatedPost.general">Thông tin cơ bản</string>
+    <string name="StepOneCreatedPost.opportunitytype">Loại cơ hội</string>
+    <string name="StepOneCreatedPost.opportunityTitle">Tiêu đề</string>
+    <string name="StepOneCreatedPost.opportunityDescription">Nội dung</string>
+    <string name="StepOneCreatedPost.opportunityImageTitle">Hình ảnh (không bắt buộc)</string>
+    <string name="StepOneCreatedPost.titleCreateMode">Đăng bài (Bước 1/2 )</string>
+    <string name="StepOneCreatedPost.titleEditMode">Sửa bài (Bước 1/2 )</string>
+    <string name="StepOneCreatedPost.typeError">Xin vui lòng chọn loại cơ hội</string>
+    <string name="StepOneCreatedPost.contentError">Xin vui lòng điền đầy đủ vào mục Tiêu đề và Nội Dung</string>
+    <string name="StepOneCreatedPost.careerError">Xin vui lòng chọn ngành nghề</string>
+
+
+    <string name="StepTwoCreatedPost.titleCreateMode">Đăng bài (Bước 2/2 )</string>
+    <string name="StepTwoCreatedPost.titleEditMode">Sửa bài (Bước 2/2 )</string>
+    <string name="StepTwoCreatedPost.costSection">Thông tin chi phí</string>
+    <string name="StepTwoCreatedPost.costDescription">Mô tả loại chi phí</string>
+    <string name="StepTwoCreatedPost.costDescriptionHint">Vd: ngân sách, chi phí, hoa hồng...</string>
+
+    <string name="StepTwoCreatedPost.costType">Loại hình chi phí</string>
+    <string name="StepTwoCreatedPost.freeType">Miễn phí</string>
+    <string name="StepTwoCreatedPost.negotiationType">Thương lượng</string>
+    <string name="StepTwoCreatedPost.rangeType">Trong khoảng</string>
+
+    <string name="StepTwoCreatedPost.fromCost">Từ (VNĐ):</string>
+    <string name="StepTwoCreatedPost.toCost">Đến (VNĐ):</string>
+    <string name="StepTwoCreatedPost.fromCostHint">5000(5 triệu VNĐ)</string>
+    <string name="StepTwoCreatedPost.toCostHint">9000(9 triệu VNĐ)</string>
+
+    <string name="StepTwoCreatedPost.isEstimated">Trong khoảng ước lượng</string>
+    <string name="StepTwoCreatedPost.timeLocation">Địa điểm và Thời gian</string>
+
+    <string name="StepTwoCreatedPost.location">Địa điểm</string>
+    <string name="StepTwoCreatedPost.startTime">Thời gian bắt đầu:</string>
+    <string name="StepTwoCreatedPost.endTime">Thời gian kết thúc:</string>
+
+    <string name="StepTwoCreatedPost.policy">Cấp quyền xem và tương tác</string>
+    <string name="StepTwoCreatedPost.acceptRegister">Cho phép đăng ký tham gia</string>
+    <string name="StepTwoCreatedPost.allCEO">Tất cả các CEO</string>
+    <string name="StepTwoCreatedPost.myGroups"><u>Nhóm của tôi (Nhấn vào để chọn nhóm)</u></string>
+    <string name="StepTwoCreatedPost.otherGroups"><u>Các nhóm khác (Nhấn vào để chọn nhóm)</u></string>
+    <string name="StepTwoCreatedPost.currentGroup">Nhóm hiện tại:</string>
+
+    <string name="StepTwoCreatedPost.infoText">Tất cả thông tin phía dưới đây là không bắt buộc phải điền. Tuy nhiên nếu bạn cung cấp đầy đủ và chính xác sẽ có ích cho bạn và cho cộng đồng CEO.</string>
+    <string name="StepTwoCreatedPost.endTimeError">Thời gian kết thúc lớn hơn thời gian hiện tại </string>
+    <string name="StepTwoCreatedPost.beginEndTimeError">Thời gian bắt đầu phải nhỏ hơn thời gian kết thúc </string>
+    <string name="StepTwoCreatedPost.isPublicError">Bạn phải chọn hoặc "Để bài đăng công khai cho các CEO" hoặc là "Chia sẻ bài đăng vào một nhóm của bạn"</string>
+    <string name="StepTwoCreatedPost.MoneyFromToError">Số tiền Từ phải nhỏ hơn hoặc bằng số tiền Đến</string>
+
+    <string name="General.Complain">Báo cáo bài viết</string>
+    <string name="General.EditPost">Chỉnh sửa bài viết</string>
+    <string name="General.DeletePost">Xoá bài viết</string>
+
+    <string name="General.NextStep">Kế tiếp</string>
+    <string name="General.Done">Đăng</string>
+    <string name="General.JoinInGroup">mới vào nhóm</string>
+    <string name="General.RemovedMessage">Tin nhắn đã bị xoá</string>
+    <string name="General.AddedMember">Có người mới vào nhóm chat</string>
+    <string name="General.RemovedMember">Có người dùng bị xoá khỏi nhóm</string>
+    <string name="General.GroupCreated">Group mới được tạo</string>
+    <string name="General.LeftMember">Có người dùng rời nhóm</string>
+    <string name="General.SystemMessage">Tin nhắn hệ thống</string>
+    <string name="General.ImageMessage">Tin nhắn hình ảnh</string>
+    <string name="General.FileMessage">Tin nhắn file</string>
+    <string name="General.VideoMessage">Tin nhắn video</string>
+    <string name="General.OpportunityMessage">Tin nhắn cơ hội/thảo luận/sự kiện</string>
+    <string name="General.LoadMoreMessage"><u>Nhấn vào để xem thêm tin nhắn cũ</u></string>
+    <string name="General.LoadingMessage">Đang tải tin nhắn cũ...</string>
+    <string name="General.And">và</string>
+    <string name="General.You">Bạn</string>
+    <string name="General.VideoMessageNotSupport">Tin nhắn video. Tuy nhiên chúng tôi hiện chưa hỗ trợ xem tin nhắn video trên Android</string>
+    <string name="General.Error_NotSupportForDirectChannel">Tính năng này không sử dụng ở chat cá nhân, mà chỉ được dùng ở chat nhóm</string>
+    <string name="Chat.ConfirmSendImage">Bạn có muốn gửi những hình ảnh này không?</string>
+    <string name="Chat.SendPhoto">Gửi hình</string>
+    <string name="Chat.UploadInProgress">Đang tiến hành gửi hình...</string>
+    <string name="Chat.SetAGroupName">Đặt tên nhóm chat</string>
+    <string name="Chat.Create_group"><u>Tạo nhóm chat</u></string>
+    <string name="Chat.NewGroup">Nhóm chat mới</string>
+    <string name="Chat.AddMember">Thêm thành viên</string>
+    <string name="Chat.MyGroups">Nhóm của tôi</string>
+    <string name="Chat.Contacts">Danh sách liên lạc</string>
+    <string name="Chat.Groups"><u>Các nhóm chat</u></string>
+    <string name="Chat.NoConversation">Không có cuộc trò chuyện nào!</string>
+    <string name="Chat.DescriptionNoConversation">Nhấn vào nút phía trên bên phải để tạo cuộc trò chuyện mới!</string>
+    <string name="Chat.Members">Thành viên</string>
+    <string name="Chat.GroupAdmin">Quản trị viên</string>
+    <string name="Chat.CreatedBy">Nhóm được tạo bởi:</string>
+    <string name="Chat.CreatedOn">Nhóm được lập vào:</string>
+    <string name="Chat.UploadGroupPicture"><u>✎ Upload hình đại diện</u></string>
+    <string name="Chat.RemoveUser">Xoá CEO khỏi nhóm</string>
+    <string name="Chat.ViewUser">Xem thông tin CEO</string>
+    <string name="Chat.ChatUser">Chat với CEO</string>
+    <string name="Chat.LeaveGroup">Rời khỏi nhóm</string>
+    <string name="Chat.Remove">Xoá khỏi nhóm</string>
+    <string name="General.GalleryView">Danh sách hình ảnh</string>
+    <string name="Chat.RemoveMessage">Bạn có muốn xoá <b>%1$s</b> ra khỏi nhóm không?</string>
+    <string name="Chat.LeaveMessage">Bạn có muốn rời khỏi nhóm không</string>
+    <string name="Chat.Alert">Thông báo</string>
+
+    <string name="career_activity.title">Danh sách ngành nghề</string>
+    <string name="changepassword_activity.title">Thay đổi mật khẩu</string>
+    <string name="aboutzeniius_activity.title">Về Zeniius</string>
+
+    <string name="today">ngày hôm nay</string>
+    <string name="yesterday">ngày hôm qua</string>
+    <string name="error_general_post">Bài viết đã bị xoá hoặc gỡ bỏ</string>
+    <plurals name="posts_counter_format">
+        <item quantity="one">bài đăng</item>
+        <item quantity="other">bài đăng</item>
+    </plurals>
+
+    <plurals name="likes_counter_format">
+        <item quantity="one">thích</item>
+        <item quantity="other">thích</item>
+    </plurals>
+
+    <plurals name="need_counter_format">
+        <item quantity="one">Nhu cầu</item>
+        <item quantity="other">Nhu cầu</item>
+    </plurals>
+
+    <plurals name="offer_counter_format">
+        <item quantity="one">Năng lực</item>
+        <item quantity="other">Năng lực</item>
+    </plurals>
+    <plurals name="question_counter_format">
+        <item quantity="one">Thảo luận</item>
+        <item quantity="other">Thảo luận</item>
+    </plurals>
+
+    <plurals name="event_counter_format">
+        <item quantity="one">Sự kiện</item>
+        <item quantity="other">Sự kiện</item>
+    </plurals>
+
+    <plurals name="other_format">
+        <item quantity="one">người khác</item>
+        <item quantity="other">người khác</item>
+    </plurals>
+</resources>

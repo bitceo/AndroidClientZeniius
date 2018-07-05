@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "214089725030",
+    "firebase_url": "https://example-zeniius.firebaseio.com",
+    "project_id": "example-zeniius",
+    "storage_bucket": "example-zeniius.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214089725030:android:7b2e19744c9b72ff",
+        "android_client_info": {
+          "package_name": "com.zeniius.example"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214089725030-70a9ojv9uh8e6g20rfbcj7ovfhmjtrag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDReWuE4qlGWE72E4eXLqauBxM5m4mNb8M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

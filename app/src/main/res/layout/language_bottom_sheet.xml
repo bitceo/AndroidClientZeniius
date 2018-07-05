@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/intrinsic_padding"
+        android:layout_marginTop="@dimen/intrinsic_padding"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_bottom_sheet_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp_56"
+            android:layout_marginEnd="@dimen/large_intrinsic_padding"
+            android:layout_marginStart="@dimen/large_intrinsic_padding"
+            android:gravity="center"
+            android:text="Choose Languague"
+            android:textColor="@color/secondary_light"
+            android:textSize="16sp" />
+
+
+    <LinearLayout
+        android:id="@+id/english_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/large_intrinsic_padding"
+            android:layout_marginRight="@dimen/small_intrinsic_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/us" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_48"
+                android:layout_marginEnd="@dimen/large_intrinsic_padding"
+                android:layout_marginStart="@dimen/large_intrinsic_padding"
+                android:backgroundTint="@android:color/white"
+                android:gravity="start|center_vertical"
+                android:text="English (US)"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/vietnamese_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/large_intrinsic_padding"
+            android:layout_marginRight="@dimen/small_intrinsic_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/vn" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginEnd="@dimen/large_intrinsic_padding"
+            android:layout_marginStart="@dimen/large_intrinsic_padding"
+            android:backgroundTint="@android:color/white"
+            android:gravity="start|center_vertical"
+            android:text="Vietnamese"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="@dimen/intrinsic_padding"
+            android:layout_marginTop="@dimen/md_bottom_sheet_separator_top_margin"
+            android:background="@color/gray" />
+
+
+
+    <LinearLayout
+        android:id="@+id/cancel_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/large_intrinsic_padding"
+            android:layout_marginRight="@dimen/small_intrinsic_padding"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cancel" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_48"
+            android:layout_marginEnd="@dimen/large_intrinsic_padding"
+            android:layout_marginStart="@dimen/large_intrinsic_padding"
+            android:backgroundTint="@android:color/white"
+            android:gravity="start|center_vertical"
+            android:text="@string/bottom_sheet_option_cancel_photo"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+

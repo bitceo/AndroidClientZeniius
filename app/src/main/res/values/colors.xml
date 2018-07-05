@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#00576e</color>
+    <color name="primary_dark">#004e63</color>
+    <color name="primary_light">#006D8A</color>
+    <color name="dart_transparent">#81000000</color>
+
+    <color name="primary_dark_text">#28333D</color>
+    <color name="secondary_text">#434343</color>
+    <color name="secondary_light">#979797</color>
+
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="custom_divider_color">#dfdfdf</color>
+    <color name="highlight_text">#17a1d7</color>
+
+    <color name="send_button_color">@color/primary</color>
+
+    <color name="light_gray">#d8d6d5</color>
+    <color name="posts_counter_bg">#df3e3e3e</color>
+
+    <color name="like_icon_activated">#FF5252</color>
+    <color name="icons_counter_color">#828181</color>
+    <color name="circle_image_shadow">#8b8b8b</color>
+
+    <color name="send_comment_button_activated">#0097d3</color>
+    <color name="send_comment_button_deactivated">#7fcbe9</color>
+
+    <color name="facebook_button_color">#3b5999</color>
+    <color name="facebook_button_color_pressed">#2f477a</color>
+    <color name="google_button_color">#d44837</color>
+    <color name="google_button_color_pressed">#FFA43528</color>
+    <color name="button_pressed_text_color">#bcbcbc</color>
+
+    <color name="dark_red"> #8c0731</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#6666ff</color>
+    <color name="gray">#bdbdbd</color>
+    <color name="black">#000000</color>
+    <color name="white_greyish">#EEEEEE</color>
+    <color name="orange"> #ec8d18</color>
+    <color name="orange_light"> #f2b05f</color>
+    <color name="button_selectorcolor">#E38B31</color>
+    <color name="colorAccent">#9a4d6a</color>
+
+    <color name="selector_border">#dedede</color>
+    <color name="picker_box_border">#9f9f9f</color>
+    <color name="picker_box_bg">#ffffff</color>
+    <color name="ds_list_bg">#ffffff</color>
+    <color name="picker_list_text">#232323</color>
+    <color name="background_primary">#f6f7f4</color>
+    <color name="unread_noti_color">#d0d0d0</color>
+    <color name="chatButtonColor">#75df11</color>
+
+    <color name="silver">#C0C0C0</color>
+
+
+
+
+    <color name="error_view_text">@color/grey_400</color>
+    <color name="error_view_text_light">@color/grey_600</color>
+
+    <!--activity_message_list-->
+    <color name="activity_message_list_error_view_text">@color/white</color>
+    <color name="activity_message_list_error_view_text_light">@color/white</color>
+    <color name="activity_message_list_error_view_background">#45000000</color>
+
+    <color name="chat_input_background">@color/grey_100</color>
+
+    <!--system-->
+    <color name="background_bubble_system">#C9E4F6</color>
+    <color name="background_bubble_system_load_more">#dd950e</color>
+    <color name="background_bubble_text_system">@color/black</color>
+    <color name="background_bubble_text_system_load_more">@color/white</color>
+    <color name="color_clickable_link_system">@color/black</color>
+
+    <!--sender-->
+    <color name="background_bubble_sender">#99E1FFC7</color>
+    <color name="background_bubble_text_sender">@color/black</color>
+    <color name="background_bubble_timestamp_sender">@color/blue_grey_800</color>
+    <color name="color_clickable_link_sender">@color/black</color>
+
+    <!--recipient-->
+    <color name="background_bubble_recipient">@color/white</color>
+    <color name="background_bubble_text_recipient">@color/black</color>
+    <color name="background_bubble_timestamp_recipient">@color/blue_grey_800</color>
+    <color name="color_clickable_link_recipient">@color/black</color>
+
+    <color name="windowBackground">@color/white</color>
+
+
+</resources>

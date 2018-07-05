@@ -1,0 +1,233 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/primary"
+android:gravity="center_horizontal"
+android:orientation="vertical"
+android:padding="@dimen/intrinsic_padding"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.atomic.android.views.CircularImageView
+                android:id="@+id/ceoImageView"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="@dimen/post_list_item_author_image_margin"
+                app:border="false"
+                app:shadow="true"
+                app:shadow_radius="@dimen/circle_image_shadow_radius"
+                app:shadow_color="@color/circle_image_shadow"
+                app:border_color="@color/gray"
+
+                />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingTop="16dp"
+                android:paddingRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_toRightOf="@id/ceoImageView"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily ="sans-serif-light"
+                android:textColor="@color/primary_dark" />
+
+            <TextView
+                android:id="@+id/profileDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:paddingBottom="4dp"
+                android:paddingRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_below="@id/nameTextView"
+                android:layout_toRightOf="@id/ceoImageView"
+                android:textSize="15sp"
+                android:text ="@string/MoreFragment.profileDescription" />
+
+        </RelativeLayout>
+
+            <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:paddingLeft="8dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:textColor="@color/primary_dark"
+            android:text="@string/MoreFragment.profileSetting"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/gray" />
+
+            <TextView
+                android:id="@+id/aboutZeniiusTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:paddingLeft="8dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textColor="@color/black"
+                android:text="@string/MoreFragment.aboutZeniius"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+            <TextView
+                android:id="@+id/changePasswordTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingLeft="8dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:background="@color/white"
+                android:textColor="@color/black"
+                android:text="@string/MoreFragment.changePassword"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white"
+                android:paddingLeft="8dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:textColor="@color/primary_dark"
+                android:text="@string/MoreFragment.support"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@+id/languageLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:background="@color/white"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/languageTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/MoreFragment.language"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            />
+
+            <ImageView
+                android:id="@+id/languageFlag"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:scaleType="fitCenter"
+                android:layout_marginRight="10dp"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
+
+
+        <TextView
+                android:id="@+id/chinhsachTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingLeft="8dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:background="@color/white"
+                android:text="@string/MoreFragment.policy"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+            <TextView
+                android:id="@+id/thoathuanTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingLeft="8dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:background="@color/white"
+                android:text="@string/MoreFragment.terms"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+            <TextView
+                android:id="@+id/logoutTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingLeft="8dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:background="@color/white"
+                android:text="@string/MoreFragment.logout"
+                android:textColor="@color/dark_red"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                />
+
+
+
+        </LinearLayout>
+
+
+
+</ScrollView>

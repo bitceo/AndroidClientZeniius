@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="2dp"
+    android:paddingRight="2dp"
+    android:paddingTop="1dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardCornerRadius="2dp"
+        card_view:cardElevation="@dimen/post_card_elevation"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/Intro"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.atomic.android.views.CircularImageView
+                    android:id="@+id/authorImageView"
+                    android:layout_width="@dimen/post_list_item_author_image_side"
+                    android:layout_height="@dimen/post_list_item_author_image_side"
+                    android:layout_marginRight="@dimen/intrinsic_padding"
+                    android:layout_marginTop="@dimen/post_list_item_author_image_margin"
+                    app:border="false"
+                    app:shadow="true"
+                    app:shadow_radius="@dimen/circle_image_shadow_radius"
+                    app:shadow_color="@color/circle_image_shadow"
+                    app:border_color="@color/gray"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/authorImageView">
+
+
+                    <TextView
+                        android:id="@+id/authorActionTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/intrinsic_padding"
+                        android:paddingRight="@dimen/intrinsic_padding"
+                        android:paddingTop="@dimen/intrinsic_padding"
+                        android:layout_marginBottom="@dimen/small_intrinsic_padding"
+                        android:inputType="textMultiLine"
+                        android:layout_toRightOf="@+id/authorTextView"
+                        android:ellipsize="end"
+                        android:textAppearance="@style/TextAppearance.First" />
+
+
+                <TextView
+                    android:id="@+id/datePostTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/intrinsic_padding"
+                    android:paddingRight="@dimen/intrinsic_padding"
+                    android:layout_marginBottom="@dimen/intrinsic_padding"
+                    android:layout_below="@+id/authorActionTextView"
+                    android:layout_alignParentStart="true"
+                    android:ellipsize="end"
+                    android:textAppearance="@style/TextAppearance.Second" />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/intrinsic_padding"
+                android:paddingRight="@dimen/intrinsic_padding"
+                android:paddingTop="@dimen/small_intrinsic_padding"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/Intro"
+                android:ellipsize="end"
+                android:inputType="textMultiLine"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.TitlePost" />
+
+            <TextView
+                android:id="@+id/costTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/small_intrinsic_padding"
+                android:paddingLeft="@dimen/intrinsic_padding"
+                android:paddingRight="@dimen/intrinsic_padding"
+                android:layout_below="@+id/titleTextView"
+                android:layout_alignParentStart="true"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:textAppearance="@style/TextAppearance.Second"
+                android:layout_alignParentEnd="true"
+                android:textStyle="italic"
+                android:visibility ="gone"
+                />
+
+            <TextView
+                android:id="@+id/startTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/small_intrinsic_padding"
+                android:paddingLeft="@dimen/intrinsic_padding"
+                android:paddingRight="@dimen/intrinsic_padding"
+                android:layout_below="@+id/costTextView"
+                android:layout_alignParentStart="true"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textAppearance="@style/TextAppearance.Second"
+                android:layout_alignParentEnd="true"
+                android:textStyle="italic"
+                android:visibility ="gone"/>
+
+            <TextView
+                android:id="@+id/endTimeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/small_intrinsic_padding"
+                android:paddingLeft="@dimen/intrinsic_padding"
+                android:paddingRight="@dimen/intrinsic_padding"
+                android:layout_below="@+id/startTimeTextView"
+                android:layout_alignParentStart="true"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:textAppearance="@style/TextAppearance.Second"
+                android:layout_alignParentEnd="true"
+                android:textStyle="italic"
+                android:visibility ="gone"/>
+
+            <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/small_intrinsic_padding"
+            android:paddingLeft="@dimen/intrinsic_padding"
+            android:paddingRight="@dimen/intrinsic_padding"
+            android:layout_below="@+id/endTimeTextView"
+            android:layout_alignParentStart="true"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:textAppearance="@style/TextAppearance.Second"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="@dimen/intrinsic_padding"
+            android:textStyle="italic"
+            android:visibility ="gone"/>
+
+            <TextView
+                android:id="@+id/detailsTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/intrinsic_padding"
+                android:paddingLeft="@dimen/intrinsic_padding"
+                android:paddingRight="@dimen/intrinsic_padding"
+                android:layout_below="@+id/locationTextView"
+                android:layout_alignParentStart="true"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:textAppearance="@style/TextAppearance.Second"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="@dimen/large_intrinsic_padding"/>
+
+            <LinearLayout
+                android:id="@+id/girdviewcustom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/detailsTextView"
+                android:background="@color/dart_transparent" >
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/registerBtn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/registerbutton_selector"
+                android:padding="3dp"
+                android:text="@string/General.Register"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:color="@color/primary"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/girdviewcustom"/>
+
+            <include
+                android:id="@+id/countersContainer"
+                layout="@layout/counters_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/intrinsic_padding"
+                android:layout_marginLeft="@dimen/intrinsic_padding"
+                android:layout_below="@+id/registerBtn"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

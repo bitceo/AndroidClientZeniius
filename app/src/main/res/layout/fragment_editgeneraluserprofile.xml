@@ -1,0 +1,356 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/primary"
+android:gravity="center_horizontal"
+android:orientation="vertical"
+android:padding="@dimen/intrinsic_padding">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:foreground="?android:attr/selectableItemBackground">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/generalTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@color/primary_dark"
+                    android:gravity="center"
+                    android:text="@string/EditGeneralUserProfileFragment.title"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/user_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/lastNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/General.lastName"
+                        android:textColor="@color/secondary_light"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/lastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/lastNameTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="textCapWords"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:hint="@string/General.hint"
+                        android:textColorHint="@color/gray"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/user_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/middleNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/General.middleName"
+                        android:textColor="@color/secondary_light"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/middleName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/middleNameTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="textCapWords"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:hint="@string/General.hint"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/user_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/firstNameTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/General.firstName"
+                        android:textColor="@color/secondary_light"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/firstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/firstNameTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="textCapWords"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:hint="@string/General.hint"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/birthday_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/birthdayTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/General.birthday"
+                        android:textColor="@color/secondary_light"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/birthdayTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:inputType="textCapWords"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:hint="@string/General.hint"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/white_greyish" />
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/small_intrinsic_padding"
+                    android:layout_marginRight="@dimen/small_intrinsic_padding"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/about_profiledetail" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/aboutTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="5dp"
+                        android:text="@string/EditGeneralUserProfileFragment.about"
+                        android:textColor="@color/secondary_light"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/about"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/aboutTextView"
+                        android:background="@android:color/transparent"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="10dp"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@null"
+                        android:hint="@string/General.hint"
+                        android:textColorHint="@color/gray"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+
+</ScrollView>

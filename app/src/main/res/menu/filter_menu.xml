@@ -1,0 +1,22 @@
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<item
+    android:id="@+id/filter"
+    android:title=""
+    app:showAsAction="always"
+    android:icon="@drawable/filter"
+    android:orderInCategory="1" />
+
+
+<item
+    android:id="@+id/filter_delete"
+    android:title=""
+    android:icon="@drawable/filter_delete"
+    app:showAsAction="always"
+    android:orderInCategory="2"
+    />
+
+</menu>

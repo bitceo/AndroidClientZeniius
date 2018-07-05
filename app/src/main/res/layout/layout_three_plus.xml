@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layout_three_plus"
+        android:background="#ffffff"
+        >
+
+        <ImageView
+            android:id="@+id/a41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/a42"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
+            android:scaleType="centerCrop"
+           />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp">
+        <ImageView
+            android:id="@+id/a43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:foreground="@drawable/image_overlay"
+            android:scaleType="centerCrop"
+           />
+
+        <TextView
+            android:id="@+id/morePicNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+
+            android:layout_alignTop="@id/a43"
+            android:layout_alignBottom="@id/a43"
+            android:layout_alignLeft="@id/a43"
+            android:layout_alignRight="@id/a43" />
+
+
+        </RelativeLayout>
+</LinearLayout>
